@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Clouncil: a Call-in Show for Clojure Beginners</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Patrick+Hand&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     /* possible color theme: https://color.adobe.com/Coral-Teal-Gray-color-theme-12891519/ */
+     /*
+        1. Use a more-intuitive box-sizing model.
+      */
+     *, *::before, *::after {
+       box-sizing: border-box;
+     }
+     /*
+        2. Remove default margin
+      */
+     * {
+       margin: 0;
+     }
+     /*
+        3. Allow percentage-based heights in the application
+      */
+     html, body {
+       height: 100%;
+     }
+     /*
+        Typographic tweaks!
+        4. Add accessible line-height
+        5. Improve text rendering
+      */
+     body {
+       line-height: 1.5;
+       -webkit-font-smoothing: antialiased;
+     }
+     /*
+        6. Improve media defaults
+      */
+     img, picture, video, canvas, svg {
+       display: block;
+       max-width: 100%;
+     }
+     /*
+        7. Remove built-in form typography styles
+      */
+     input, button, textarea, select {
+       font: inherit;
+     }
+     /*
+        8. Avoid text overflows
+      */
+     p, h1, h2, h3, h4, h5, h6 {
+       overflow-wrap: break-word;
+     }
+     /*
+        9. Create a root stacking context
+      */
+     #root, #__next {
+       isolation: isolate;
+     }
+
+     body {
+       background: #72F2EB;
+       font-family: 'Lato', 'Source Sans Pro', sans-serif;
+       font-family: 'Source Sans Pro', sans-serif;
+       font-family: 'Nunito', sans-serif;
+       font-size: 1.25rem;
+       line-height: 1.5;
+     }
+
+     .container {
+       margin: 2rem auto 0;
+       max-width: 48rem;
+     }
+
+     h1 {
+       /* font-family: 'Patrick Hand', 'Source Sans Pro', sans-serif; */
+     }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div class="bg-sky-50 py-8">
+
+    </div>
+    <div class="max-w-2xl mx-auto text-center py-8 px-4 mt-8 rounded-md">
+      <h1 class="text-4xl font-extrabold sm:text-5xl text-sky-400">
+        Calling All Clojure Beginners 🗣
+      </h1>
+    </div>
+
+    <div class="max-w-2xl mx-auto text-center py-8 px-4 text-white bg-sky-400 mt-8 rounded-md">
+      <h1 class="text-4xl font-extrabold sm:text-5xl">
+        Calling All Clojure Beginners 🗣
+      </h1>
+    </div>
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-800">
+      <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply" alt="">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div class="md:ml-auto md:w-1/2 md:pl-10">
+          <h2 class="text-base font-semibold uppercase tracking-wider text-gray-300">Award winning support</h2>
+          <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">We’re here to help</p>
+          <p class="mt-3 text-lg text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.</p>
+          <div class="mt-8">
+            <div class="inline-flex rounded-md shadow">
+              <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                Visit the help center
+                <!-- Heroicon name: solid/external-link -->
+                <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h1>The Clouncil</h1>
+
+      <p>
+        Are you a Clojure beginner? Are you feeling
+      </p>
+      <ul>
+        <li>stumped?</li>
+        <li>confused?</li>
+        <li>flustered?</li>
+        <li>befuddled?</li>
+        <li>flummoxed?</li>
+      </ul>
+      <p>
+        The Clouncil is here to help!
+      </p>
+      <p>
+        We're a group of experienced Clojure enthusiasts who love helping new folks, and having a goofy good time while we do it!
+      </p>
+      <p>
+        Join us every other Tuesday at 16:30 UTC as we review code and field questions to help beginners like yourself work through issues.
+      </p>
+      <h2>What is it?</h2>
+      <h2>Who's it for?</h2>
+      <h2></h2>
+    </div>
+  </body>
+</html>

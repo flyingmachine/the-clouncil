@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Clouncil: a Call-in Show for Clojure Beginners</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Patrick+Hand&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     /* possible color theme: https://color.adobe.com/Coral-Teal-Gray-color-theme-12891519/ */
+     /*
+        1. Use a more-intuitive box-sizing model.
+      */
+     *, *::before, *::after {
+       box-sizing: border-box;
+     }
+     /*
+        2. Remove default margin
+      */
+     * {
+       margin: 0;
+     }
+     /*
+        3. Allow percentage-based heights in the application
+      */
+     html, body {
+       height: 100%;
+     }
+     /*
+        Typographic tweaks!
+        4. Add accessible line-height
+        5. Improve text rendering
+      */
+     body {
+       line-height: 1.5;
+       -webkit-font-smoothing: antialiased;
+     }
+     /*
+        6. Improve media defaults
+      */
+     img, picture, video, canvas, svg {
+       display: block;
+       max-width: 100%;
+     }
+     /*
+        7. Remove built-in form typography styles
+      */
+     input, button, textarea, select {
+       font: inherit;
+     }
+     /*
+        8. Avoid text overflows
+      */
+     p, h1, h2, h3, h4, h5, h6 {
+       overflow-wrap: break-word;
+     }
+     /*
+        9. Create a root stacking context
+      */
+     #root, #__next {
+       isolation: isolate;
+     }
+
+     body {
+       background: #72F2EB;
+       font-family: 'Lato', 'Source Sans Pro', sans-serif;
+       font-family: 'Source Sans Pro', sans-serif;
+       font-family: 'Nunito', sans-serif;
+       font-size: 1.25rem;
+       line-height: 1.5;
+     }
+
+     .container {
+       margin: 2rem auto 0;
+       max-width: 48rem;
+     }
+
+     h1 {
+       /* font-family: 'Patrick Hand', 'Source Sans Pro', sans-serif; */
+     }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!--
+         This example requires Tailwind CSS v2.0+
+
+         This example requires some changes to your config:
+
+         ```
+         // tailwind.config.js
+         module.exports = {
+         // ...
+         plugins: [
+         // ...
+         require('@tailwindcss/forms'),
+         ],
+         }
+         ```
+    -->
+    <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+      <div>
+        <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+          <div class="flex items-center flex-1">
+            <div class="hidden md:block md:ml-10 md:space-x-10">
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">What</a>
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">When</a>
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="relative bg-white overflow-hidden">
+          <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
+            <svg class="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8" width="640" height="784" fill="none" viewBox="0 0 640 784">
+              <defs>
+                <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+              <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+            </svg>
+          </div>
+
+          <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 text-gray-500">
+            <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-16 sm:px-6 lg:mt-16">
+              <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                  <h1 class="">
+                    <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+                      <span class="block text-gray-600 text-5xl">Calling all 🗣</span>
+                      <span class="block text-sky-500">Clojure Beginners </span>
+                    </span>
+                  </h1>
+                  <div class="text-gray-500">
+                    <p class="text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl my-4">
+                      Are you feeling...
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 bg-white">
+                      <div class="p-3 col-span-1 text-purple-500 font-bold rounded-lg divide-y divide-gray-200 text-center border-solid border-purple-500 border-2">stumped?</div>
+                      <div class="p-3 col-span-1 bg-purple-500 text-white font-bold rounded-lg divide-y divide-gray-200 text-center">confused?</div>
+                      <div class="p-3 col-span-1 bg-purple-500 text-white font-bold rounded-lg divide-y divide-gray-200 text-center">flustered?</div>
+                      <div class="p-3 col-span-1 bg-purple-500 text-white font-bold rounded-lg divide-y divide-gray-200 text-center">befuddled?</div>
+                      <div class="p-3 col-span-1 bg-purple-500 text-white font-bold rounded-lg divide-y divide-gray-200 text-center">flummoxed?</div>
+                      <div class="p-3 col-span-1 bg-purple-500 text-white font-bold rounded-lg divide-y divide-gray-200 text-center">baffled?</div>
+                    </div>
+
+                  </div>
+                  <div>
+                    <div class="my-8 text-6xl font-extrabold text-rose-400">
+                      The Clouncil is here to help!
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                  <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
+                    <defs>
+                      <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                      </pattern>
+                    </defs>
+                    <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+                    <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
+                  </svg>
+                  <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                    <button type="button" class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                      <span class="sr-only">Watch our video to learn more</span>
+                      <img class="w-full" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                      <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
+                        <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+                          <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
+                          <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+  </body>
+</html>
