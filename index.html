@@ -68,7 +68,6 @@
      }
 
      body {
-       background: #72F2EB;
        font-family: 'Lato', 'Source Sans Pro', sans-serif;
        font-family: 'Source Sans Pro', sans-serif;
        font-family: 'Nunito', sans-serif;
@@ -86,74 +85,283 @@
      }
     </style>
   </head>
-  <body class="bg-white">
-    <div class="bg-sky-50 py-8">
-
-    </div>
-    <div class="max-w-2xl mx-auto text-center py-8 px-4 mt-8 rounded-md">
-      <h1 class="text-4xl font-extrabold sm:text-5xl text-sky-400">
-        Calling All Clojure Beginners 🗣
-      </h1>
-    </div>
-
-    <div class="max-w-2xl mx-auto text-center py-8 px-4 text-white bg-sky-400 mt-8 rounded-md">
-      <h1 class="text-4xl font-extrabold sm:text-5xl">
-        Calling All Clojure Beginners 🗣
-      </h1>
-    </div>
+  <body class="bg-gray-50">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+      your experience.
+      </p>
+    <![endif]-->
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="relative bg-gray-800">
-      <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply" alt="">
+    <div class="relative bg-gray-50 overflow-hidden">
+      <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+        <div class="relative h-full max-w-7xl mx-auto">
+          <svg class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+              <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+          </svg>
+          <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+              <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+          </svg>
+        </div>
       </div>
-      <div class="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div class="md:ml-auto md:w-1/2 md:pl-10">
-          <h2 class="text-base font-semibold uppercase tracking-wider text-gray-300">Award winning support</h2>
-          <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">We’re here to help</p>
-          <p class="mt-3 text-lg text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.</p>
-          <div class="mt-8">
-            <div class="inline-flex rounded-md shadow">
-              <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
-                Visit the help center
-                <!-- Heroicon name: solid/external-link -->
-                <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                </svg>
-              </a>
+
+      <div class="relative pt-6 pb-8 sm:pb-16">
+        <div>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+              <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                  <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <!-- Heroicon name: outline/menu -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden md:flex md:space-x-10">
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 1</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 2</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 3</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 4</a>
+              </div>
+            </nav>
+          </div>
+
+          <!--
+               Mobile menu, show/hide based on menu open state.
+
+               Entering: "duration-150 ease-out"
+               From: "opacity-0 scale-95"
+               To: "opacity-100 scale-100"
+               Leaving: "duration-100 ease-in"
+               From: "opacity-100 scale-100"
+               To: "opacity-0 scale-95"
+          -->
+          <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div class="px-5 pt-4 flex items-center justify-between">
+                <div>
+                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                </div>
+                <div class="-mr-2">
+                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="px-2 pt-2 pb-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+              </div>
+              <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"> Log in </a>
             </div>
           </div>
         </div>
+
+        <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-16">
+          <div class="text-left text-gray-700">
+            <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl
+                       mt-3 max-w-md mx-auto md:mt-5 md:max-w-3xl">
+              <span class="block xl:inline">Calling all</span>
+            </h1>
+            <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl
+                       mt-1 max-w-md mx-auto md:mt-0 md:max-w-3xl">
+              <span class="block text-cyan-500 xl:inline">Clojure Beginners 🗣</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+              The Clouncil is a
+              <span class="font-bold text-cyan-500">fun and friendly virtual
+                meetup for Clojure beginners</span>
+              to ask experienced Clojurians questions and work out problems together
+            </p>
+          </div>
+        </main>
       </div>
     </div>
 
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="bg-white overflow-hidden">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl pb-16">
+        <div class="relative mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-16">
+          <div class="relative">
+            <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+              We want to help you get unstuck!
+            </h3>
+            <div class="text-gray-500">
+              <p class="text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl my-4">
+                Are you feeling...
+              </p>
+              <div class="grid grid-cols-3 gap-2 bg-white mb-8">
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">stumped?</div>
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">confused?</div>
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">flustered?</div>
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">befuddled?</div>
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">flummoxed?</div>
+                <div class="p-3 col-span-1 text-purple-500 text-center bg-purple-50">baffled?</div>
+              </div>
 
-    <div class="container">
-      <h1>The Clouncil</h1>
+            </div>
 
-      <p>
-        Are you a Clojure beginner? Are you feeling
-      </p>
-      <ul>
-        <li>stumped?</li>
-        <li>confused?</li>
-        <li>flustered?</li>
-        <li>befuddled?</li>
-        <li>flummoxed?</li>
-      </ul>
-      <p>
-        The Clouncil is here to help!
-      </p>
-      <p>
-        We're a group of experienced Clojure enthusiasts who love helping new folks, and having a goofy good time while we do it!
-      </p>
-      <p>
-        Join us every other Tuesday at 16:30 UTC as we review code and field questions to help beginners like yourself work through issues.
-      </p>
-      <h2>What is it?</h2>
-      <h2>Who's it for?</h2>
-      <h2></h2>
+            <p class="my-4 text-lg text-gray-500">
+              <span class="font-extrabold">Join us every other Tuesday at 16:30 UTC</span>
+              as we review code from attendees and field questions to help beginners like yourself work through issues. Show us your code, ask us your questions, and we'll try our darndest to help you get unstuck!
+            </p>
+          </div>
+
+          <!-- right column  -->
+          <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+              Participate in our next meeting 🎉
+            </h3>
+
+            <!--
+                 This example requires Tailwind CSS v2.0+
+
+                 This example requires some changes to your config:
+
+                 ```
+                 // tailwind.config.js
+                 module.exports = {
+                 // ...
+                 plugins: [
+                 // ...
+                 require('@tailwindcss/forms'),
+                 ],
+                 }
+                 ```
+            -->
+            <form class="space-y-8 divide-y divide-gray-200">
+              <div class="space-y-8 divide-y divide-gray-200">
+                <div>
+                  <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                    <div class="sm:col-span-4">
+                      <label for="username" class="block text-sm font-medium text-gray-700"> Name </label>
+                      <div class="mt-1 flex rounded-md shadow-sm">
+
+                        <input type="text" name="username" id="username" autocomplete="username" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border px-3 py-2">
+                      </div>
+                    </div>
+
+                    <div class="sm:col-span-6">
+                      <label for="about" class="block text-sm font-medium text-gray-700"> What's on your mind? </label>
+                      <div class="mt-1">
+                        <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md px-3 py-2"></textarea>
+                      </div>
+                      <p class="mt-2 text-sm text-gray-500">Tell us about what's stumping you. Link to a gist, or just paste code in directly.</p>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+
+
+
+                <div class="pt-5">
+                  <div class="flex">
+                    <button type="button" class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Cancel</button>
+                    <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-cyan-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+                  </div>
+                </div>
+            </form>
+              </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
+    <div class="py-12">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-3xl">
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-rose-600">What The Clouncil is</h2>
+          <p class="my-3">
+            The Clouncil is a bi-weekly Zoom meetup / show organized by a group
+            of experienced Clojure developers who enjoy helping beginners learn.
+          </p>
+          <p class="my-3">
+            Meetups are one hour. During that hour, we'll field your questions
+            and work with you to help remove any walls you've been banging
+            your head against 😅
+          </p>
+          <p class="my-3">
+            Our goal is to provide <span class="font-extrabold">a fun, friendly,
+            supportive, and caring environment</span> for people to get help
+            learning this amazing language!
+          </p>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-rose-600">Who's on The Clouncil</h2>
+          <p class="my-3">
+            The Clouncil Core consists of five developers:
+          </p>
+          <p class="my-3">
+            We also plan on having guest Clouncilors. If you're interested,
+            please email <a class="text-sky-500" href="mailto:daniel@braveclojure.com">daniel@braveclojure.com</a>.
+          </p>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-rose-600">How to get help</h2>
+          <p class="my-3">
+            Use the signup form above...
+          </p>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-rose-600">Code of Conduct</h2>
+          <p class="my-3">
+            We follow the <a href="https://berlincodeofconduct.org/"
+                             class="text-sky-500">Berlin code of conduct</a>. If
+            you witness or are subject to unacceptable behavior, please reach
+            out to Daniel via email, <a class="text-sky-500" href="mailto:daniel@braveclojure.com">daniel@braveclojure.com</a>.
+          </p>
+          <p class="my-3">
+            The Clouncil is founded on a spirit of fun, kindness, and
+            generosity. We think these values are especially important in a
+            community that's centered on enthusiastically supporting
+            beginners, folks who might feel intimidated about being novices in
+            public with strangers.
+          </p>
+          <p class="my-3">
+            A code of conduct allows us to translate our values into real
+            life by making explicit how we expect folks in the community to
+            treat each other.
+          </p>
+        </div>
+
+
+      </div>
   </body>
 </html>
