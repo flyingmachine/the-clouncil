@@ -115,50 +115,28 @@
         </div>
       </div>
 
-      <div class="relative pt-6 pb-8 sm:pb-16">
+      <div class="relative pt-6 pb-8 sm:pb-20">
         <div>
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
-              <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div class="flex items-center justify-between w-full md:w-auto">
-                  <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                      <span class="sr-only">Open main menu</span>
-                      <!-- Heroicon name: outline/menu -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden md:flex md:space-x-10">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 1</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 2</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 3</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Link 4</a>
-              </div>
-            </nav>
+          </nav>
           </div>
         </div>
 
-        <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-16">
+        <main class="relative max-w-xl mx-auto px-8 sm:px-6 lg:px-8 md:max-w-3xl">
           <div class="text-left text-gray-700">
             <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl
-                       mt-3 max-w-md mx-auto md:mt-5 md:max-w-3xl">
+                       mt-3 mx-auto md:mt-5">
               <span class="block xl:inline">Calling all</span>
             </h1>
             <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl
-                       mt-1 max-w-md mx-auto md:mt-0 md:max-w-3xl">
+                       mt-1 mx-auto md:mt-0">
               <span class="block text-cyan-500 xl:inline">Clojure Beginners 🗣</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            <p class="mt-3 mx-auto text-base sm:text-lg md:mt-5 md:text-xl">
               The Clouncil is a
-              <span class="font-bold text-cyan-500">fun and friendly virtual
-                meetup for Clojure beginners</span>
+              <span class="font-bold text-cyan-500">fun and friendly live
+                call-in show for Clojure beginners</span>
               to ask experienced Clojurians questions and work out problems together
             </p>
           </div>
@@ -168,7 +146,8 @@
 
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-white overflow-hidden">
-      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl pb-16">
+      <div class="relative max-w-xl mx-auto px-8 sm:px-6 lg:px-8 md:max-w-3xl lg:max-w-7xl pb-12"
+      >
         <div class="relative mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-16">
           <div class="relative">
             <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -196,72 +175,26 @@
           </div>
 
           <!-- right column  -->
-          <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+          <div class="relative">
             <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
               Participate in our next meeting 🎉
             </h3>
 
-            <!--
-                 This example requires Tailwind CSS v2.0+
-
-                 This example requires some changes to your config:
-
-                 ```
-                 // tailwind.config.js
-                 module.exports = {
-                 // ...
-                 plugins: [
-                 // ...
-                 require('@tailwindcss/forms'),
-                 ],
-                 }
-                 ```
-            -->
-            <form class="space-y-8 divide-y divide-gray-200">
-              <div class="space-y-8 divide-y divide-gray-200">
-                <div>
-                  <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-                    <div class="sm:col-span-4">
-                      <label for="username" class="block text-sm font-medium text-gray-700"> Name </label>
-                      <div class="mt-1 flex rounded-md shadow-sm">
-
-                        <input type="text" name="username" id="username" autocomplete="username" class="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border px-3 py-2">
-                      </div>
-                    </div>
-
-                    <div class="sm:col-span-6">
-                      <label for="about" class="block text-sm font-medium text-gray-700"> What's on your mind? </label>
-                      <div class="mt-1">
-                        <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md px-3 py-2"></textarea>
-                      </div>
-                      <p class="mt-2 text-sm text-gray-500">Tell us about what's stumping you. Link to a gist, or just paste code in directly.</p>
-                    </div>
-
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="pt-5">
-                  <div class="flex">
-                    <button type="button" class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Cancel</button>
-                    <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-cyan-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
-                  </div>
-                </div>
-            </form>
-              </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_6YjFEnnUQCQbmLA6Zy2X6KTazlJ9EmygrjHppfrjvaf0qA/viewform?embedded=true"
+                    width="640"
+                    height="340"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">Loading…</iframe>
+             </div>
           </div>
 
 
         </div>
       </div>
     </div>
-    <div class="py-12">
-      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-3xl">
-
+    <div class="mt-8 mx-auto max-w-7xl px-4 sm:mt-16 pb-20">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-3xl" >
         <div class="mb-8">
           <h2 class="text-3xl font-bold text-rose-600">What The Clouncil is</h2>
           <p class="my-3">
@@ -285,16 +218,86 @@
           <p class="my-3">
             The Clouncil Core consists of five developers:
           </p>
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+
+  <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="flex-1 flex flex-col p-8">
+      <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-3xl"
+           src="./headshots/the-clouncil-002-Edit.jpg"
+           alt="">
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Jordan Miller</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+     </dl>
+    </div>
+   </li>
+
+  <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="flex-1 flex flex-col p-8">
+      <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-3xl"
+           src="./headshots/the-clouncil-004-Edit.jpg"
+           alt="">
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Paula Geraon</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+     </dl>
+    </div>
+  </li>
+
+
+  <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="flex-1 flex flex-col p-8">
+      <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-3xl"
+           src="./headshots/the-clouncil-005-Edit.jpg"
+           alt="">
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Mike Fikes</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+     </dl>
+    </div>
+  </li>
+
+
+  <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="flex-1 flex flex-col p-8">
+      <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-3xl"
+           src="./headshots/the-clouncil-006-Edit.jpg"
+           alt="">
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Arne Brasseur</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+     </dl>
+    </div>
+  </li>
+
+  <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="flex-1 flex flex-col p-8">
+      <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-3xl"
+           src="./headshots/the-clouncil-007-Edit.jpg"
+           alt="">
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Daniel Higginbotham</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+     </dl>
+    </div>
+  </li>
+
+
+  <!-- More people... -->
+</ul>
+
+
+
           <p class="my-3">
             We also plan on having guest Clouncilors. If you're interested,
             please email <a class="text-sky-500" href="mailto:daniel@braveclojure.com">daniel@braveclojure.com</a>.
-          </p>
-        </div>
-
-        <div class="mb-8">
-          <h2 class="text-3xl font-bold text-rose-600">How to get help</h2>
-          <p class="my-3">
-            Use the signup form above...
           </p>
         </div>
 
